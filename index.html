@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>COMP4513 Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script charset="utf-8" src="js/app.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div id="loader">
+                <img src="ajax-loader.gif" />
+            </div>
+            <div id="selector" class="field has-addons">
+                <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                    <select id="movieChooser">
+                        <option value="0">Select a movie</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="control">
+                    <button type="button" class="button is-primary" id="btnAdd">Add</button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <p class="panel-heading">
+                    Your Favorite Movies
+                    <button id="btnClear" class="button is-small is-pulled-right is-primary">Clear</button>
+                </p>                
+                <ul id="favorites">
+                    <li class="panel-block">
+                        <figure class="media-left">                
+                                <img src="https://image.tmdb.org/t/p/w92/bvYjhsbxOBwpm8xLE5BhdA3a8CZ.jpg">                          
+                        </figure>                        
+                        <p class="media-content">Guardians</p>
+                    </li>   
+                    <li class="panel-block">
+                        <figure class="media-left">                
+                                <img src="https://image.tmdb.org/t/p/w92/4SFqHDZ1NvWdysucWbgnYlobdxC.jpg">                          
+                        </figure>                        
+                        <p class="media-content">A Beautiful Mind</p>
+                    </li>                                   
+                </ul>
+            </div>
+
+        </div>
+      </section>
+</body>
+</html>
